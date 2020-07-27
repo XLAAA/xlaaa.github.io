@@ -1,25 +1,180 @@
-extends includes/layout.pug
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>你好世界 | Hexo</title>
+  <meta name="author" content="John Doe" />
 
-block content
-  article#post(class="")
-    #article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      !=partial('includes/share/index', {}, {cache:theme.fragment_cache})
+  
+  <meta name="description" content="C++ 匠心之作 从0到1入门资料
+第1阶段C++ 匠心之作 从0到1入门
+第2阶段实战-通讯录管理
+第3阶段-C++核心编程
+第4阶段实战-基于多态的企业职工系统
+第5阶段-C++提高编程
+第6阶段实战-基于STL泛化编程的演讲比赛
+第7阶段-C++实战项目机房预约
+附-C++编程环境搭建教程
+
+" />
+  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <meta property="og:title" content="你好世界" />
+  <meta property="og:site_name" content="Hexo" />
+
+  
+  
+
+  
+    <meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" />
+  
+
+  
+  <link href="/css/images/favicon.ico" rel="icon" />
+  
+
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2020-07-26T23:06:49.268Z"><a href="/2020/07/27/README/">2020-07-27</a></time>
+      
+      
+  
+    <h1 class="title">你好世界</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="C-匠心之作-从0到1入门资料"><a href="#C-匠心之作-从0到1入门资料" class="headerlink" title="C++ 匠心之作 从0到1入门资料"></a>C++ 匠心之作 从0到1入门资料</h2><ul>
+<li><a href="第1阶段C%2B%2B%20匠心之作%20从0到1入门/C%2B%2B基础入门讲义/C%2B%2B基础入门.md">第1阶段C++ 匠心之作 从0到1入门</a></li>
+<li><a href="第2阶段实战-通讯录管理/通讯录管理系统讲义/通讯录管理系统.md">第2阶段实战-通讯录管理</a></li>
+<li><a href="第3阶段-C%2B%2B核心编程%20资料/讲义/C%2B%2B核心编程.md">第3阶段-C++核心编程</a></li>
+<li><a href="第4阶段实战-基于多态的企业职工系统/讲义/职工管理系统.md">第4阶段实战-基于多态的企业职工系统</a></li>
+<li><a href="第5阶段-C%2B%2B提高编程资料/提高编程能力资料/讲义/C%2B%2B提高编程.md">第5阶段-C++提高编程</a></li>
+<li><a href="第6阶段实战-基于STL泛化编程的演讲比赛资料/资料/讲义/基于STL的演讲比赛流程管理系统.md">第6阶段实战-基于STL泛化编程的演讲比赛</a></li>
+<li><a href="第7阶段-C%2B%2B实战项目机房预约资料/机房预约系统资料/讲义/机房预约系统.md">第7阶段-C++实战项目机房预约</a></li>
+<li><a href="附-C%2B%2B编程环境搭建教程/教程文件/C%2B%2B开发环境搭建.md">附-C++编程环境搭建教程</a></li>
+</ul>
+<h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><p><a href="https://www.bilibili.com/video/av41559729/" target="_blank" rel="noopener">https://www.bilibili.com/video/av41559729/</a></p>
+<h2 id="交流群"><a href="#交流群" class="headerlink" title="交流群"></a>交流群</h2>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
         
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .post-ad!=theme.ad.post
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
-    if page.comments !== false
-      include includes/comments/index.pug
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Recent Posts</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2020/07/27/nihaoshijie/">nihaoshijie</a>
+      </li>
+    
+      <li>
+        <a href="/2020/07/27/README/">你好世界</a>
+      </li>
+    
+      <li>
+        <a href="/2020/07/26/hello-world/">Hello World</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2020 John Doe
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
+</body>
+</html>
